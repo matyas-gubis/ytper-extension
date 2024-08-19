@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Y-base {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Y-keyboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid white;
+    gap: 0.5rem;
+    border-radius: 3px;
+}
+
+.Y-keyboard-row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.Y-keyboard-row:nth-of-type(3){
+    margin-left: -3rem;
+}
+
+.Y-keycap {
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 3px;
+}
