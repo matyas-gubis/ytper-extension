@@ -15,7 +15,6 @@
         "style/style.css"
       ],
       "js": [
-        "scripts/pako.min.js",
         "scripts/socket.io.min.js",
         "scripts/content.js"
       ],
