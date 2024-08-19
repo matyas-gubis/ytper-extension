@@ -5,12 +5,23 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "permissions": ["scripting", "activeTab"],
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
   "content_scripts": [
     {
-      "css": ["style/style.css"],
-      "js": ["scripts/socket.io.min.js", "scripts/content.js"],
-      "matches": ["https://ytper.com/*"]
+      "css": [
+        "style/style.css"
+      ],
+      "js": [
+        "scripts/pako.min.js",
+        "scripts/socket.io.min.js",
+        "scripts/content.js"
+      ],
+      "matches": [
+        "https://ytper.com/*"
+      ]
     }
   ]
 }
