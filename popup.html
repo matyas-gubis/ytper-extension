@@ -1,9 +1,26 @@
 <html>
 
 <body>
-    <button id="showkeyboard">Show keyboard</button>
-    <button id="mapkeys" hidden>Map keys</button>
-    <button id="solve">Solve it for me</button>
+    <div class="container" id="container">
+        <button id="showkeyboard">Show keyboard</button>
+        <div>
+            <input type="checkbox" name="showkeyboard" id="showkeyboard">
+            <label for="showkeyboard">Show keyboard</label>
+        </div>
+        <div>
+            <input type="checkbox" name="automap" id="automap">
+            <label for="automap" title="Map keys automatically upon stage finish">Automap</label>
+        </div>
+        <div>
+            <input type="checkbox" name="autosolve" id="autosolve">
+            <label for="autosolve" title="Let it run and solve it for you">Autosolve</label>
+        </div>
+        <button id="mapkeys" disabled>Map keys</button>
+        <button id="solve">Solve it for me</button>
+    </div>
+    <div id="wrongpage" hidden>
+        This extension only works, when the currently open webpage is <a href="https://ytper.com">Ytper</a>.
+    </div>
     <script src="./scripts/popup.js"></script>
 </body>
 
