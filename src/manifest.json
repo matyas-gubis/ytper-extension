@@ -4,6 +4,16 @@
     "description": "A mapper/solver for the Ytper",
     "version": "1.0.0",
     "action": {
-        "default_popup": "index.html"
-    }
+        "default_popup": "src/popup/index.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "src/content/index.tsx"
+            ],
+            "matches": [
+                "https://ytper.com/*"
+            ]
+        }
+    ]
 }
